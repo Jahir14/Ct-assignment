@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style>
+        .box{
+            height: 200px;
+            width: 300px;
+            text-align: center;
+            border: 1px solid #000;
+        }
+    
+    </style>
+</head>
+
+<body>
+   
+   <div class="box">
+       <h3 id="city"></h3>
+       <p id="country"></p>
+       <p><span id="temp">00</span><sup>o</sup>C</p>
+       <button type="button" class="btn">See city weather</button>
+   </div>
+    <script src="jquery-3.2.0.min.js"></script>
+    <script>
+        $(function(){
+            $("button").click( function(){
+               weather(); 
+            });
+            
+            function weather(){
+                $.ajax({
+                
+                url:"http://api.apixu.com/v1/current.json?key=fbca353fb8af4e15bb0192617172403&q=Paris",
+                dataType:"json",
+                success:function(data){
+                    $("#city").text(data.location.name);
+                    $("#country").text(data.location.country);
+                    $("#temp").text(data.current.temp_c);
+                }
+            });
+            
+        };
+       });
+            
+    
+    </script>
+</body>
+</html>
