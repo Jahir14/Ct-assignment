@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JQuery || Form Validation </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- form start -->
+        <div class="container wrapper">
+            <h1 class="text-center text-capitalize">Form validation</h1>
+            <hr>
+            <form action="profile_page.html" id="my_form">
+                <div class="form-group">
+                    <label for="Name">Name</label>
+                    <input type="text" class="form-control" id="Name" placeholder="Enter your Name" required>
+                    <span id="name_status"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="Password">Password</label>
+                    <input type="password" class="form-control" id="Password" placeholder="Enter Your Password" required>
+                    <span id="password_status"></span>
+                </div>
+            
+                <button type="reset" class="btn btn-danger" id="reset">Reset</button>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        </div>
+    <!-- form end -->
+    
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+        /* form start */
+        $(function(){
+            $("#name_status").hide();
+            $("#password_status").hide();
+            
+            var error_name = false;
+            var error_password = false;
+            
+            $("#Name").focusout(function(){
+                check_Name();
+            });
+            $("#Password").keyup(function(){
+                check_Password();
+            });
+            /*** User Name Method ***/
+            function check_Name() {
+                var name_length = $("#Name").val().length;
+                if(name_length < 5 || name_length > 24 ){
+                    $("#name_status").html("Should be within 5-24 characters");
+                    $("#name_status").show();
+                    error_name = true;
+                }
+                else{
+                    $("#name_status").hide();
+                }
+            }
+            /*** User Password Method ***/
+            function check_Password() {
+                var password_length = $("#Password").val().length;
+                if(password_length < 6){
+                    $("#password_status").html("Should be minimum 6 characters");
+                    $("#password_status").show();
+                    error_password = true;
+                }
+                else{
+                    $("#password_status").hide();
+                }
+            }
+            
+            $("#my_form").submit(function(){
+                error_name = false;
+                error_password = false;
+                
+                check_Name();
+                check_Password();
+                
+                if(error_name == false && error_password == false){
+                    return true;
+                }
+                else{
+                    return false;
+                }
+                
+            });
+            $("#reset").click(function(){
+                $("#name_status").hide();
+                $("#password_status").hide();
+            })
+        });
+        /* form end */
+    </script>
+</body>
+</html>

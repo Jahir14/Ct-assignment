@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link href="parallax/parallax-custom.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--parallax-->
+    <section id="intro" class="autoheight"> 
+        <div class="container gallery">
+            <div class="col-sm-3">
+                <img src="images/images%20(1).jpg" alt="gallery1" class="img-responsive">
+            </div>
+            <div class="col-sm-3">
+                <img src="images/images%20(1).jpg" alt="gallery2" class="img-responsive">
+            </div>
+            <div class="col-sm-3">
+                <img src="images/images%20(1).jpg" alt="gallery3" class="img-responsive">
+            </div>
+            <div class="col-sm-3">
+                <img src="images/images%20(1).jpg" alt="gallery4" class="img-responsive">
+            </div>
+        </div>
+    </section>
+    <!--parallax-->
+    
+    <!-- textarea & wordcounter start -->
+    <div class="textarea_word">
+        <h3>Textarea and word counter</h3>
+        <div id="border">
+            <textarea name="text" id="text" cols="70" rows="7"></textarea>
+        </div>
+        <!--<button id="count">Count</button>-->
+        <div id="result">
+            Words: <span id="wordCount">0</span><br/>
+            Total Characters(including trails): <span id="totalChars">0</span><br/>
+            Characters (excluding trails): <span id="charCount">0</span><br/>
+            Characters (excluding all spaces): <span id="charCountNoSpace">0</span>
+        </div>
+      
+    </div>
+    <!-- textarea & wordcounter end -->
+   
+    <!-- Change background & datepicker start -->
+    <section id="swag" class="autoheight"> 
+        <!-- Background Color Change start -->
+        <div class="container">
+            <div class="col-sm-6">
+                <div class="wrapper">
+                    <div class="header">
+                        <h1>Change Background Color and Content background </h1>
+                    </div>
+                    <div class="content-body">
+                        <h3>Cricket News</h3>
+                        <p>Bangladesh Team played a wonderfull match with Srilanka. It's a great victory for us. Keep it up.</p>
+                    </div>
+                    <div class="color-button">
+                        <h2>Change Color using Button</h2>
+                        <button type="button" class="btn btn-primary" id="Primary">Primary</button>
+                        <button type="button" class="btn btn-success" id="Success">Success</button>
+                        <button type="button" class="btn btn-danger" id="Danger">Danger</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="pick-date" style="">
+                  <h3 style="text-align:center;"> Date Picker </h3>
+                    <!-- Datepicker start -->
+                    <p>Date : <input type="text" id="datepicker" class="form-control"></p>
+                    <!-- Datepicker end -->
+                </div>
+            </div>
+        </div>
+        <!-- Background Color Change end -->
+    </section>
+    <!-- Change background & datepicker end -->
+    <!-- Tabs with jquery ui start -->
+    <div class="container tabs_jqui">
+        <div id="tabs">
+          <ul class="list-unstyled list-inline">
+            <li><a href="#tabs-1">Tab 1</a></li>
+            <li><a href="#tabs-2">Tab 2</a></li>
+            <li><a href="#tabs-3">tab 3</a></li>
+          </ul>
+          <div id="tabs-1">
+            <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+          </div>
+          <div id="tabs-2">
+            <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+          </div>
+          <div id="tabs-3">
+            <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+
+          </div>
+        </div>
+    </div>
+    <!-- Tabs with jquery ui end -->
+    <section id="sec_" class="autoheight"> 
+        <div class="container">
+            <div class="row">
+              <div class="caption">
+                <span class="border">It's cool !!!!</span>
+              </div>
+            </div>
+        </div>
+    </section>
+   <!--parallax-->
+   
+    
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- Parallax -->
+    <script type="text/javascript" src="parallax/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="parallax/parallax-custom.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#Primary").click(function(){
+                $('.wrapper').css({'background-color' : '#5CB85C'});
+                $('h1,h3,p').css({'background-color' : '#337AB7', 'color' : '#FFFFFF'});
+            });
+            $("#Success").click(function(){
+                $('.wrapper').css({'background-color' : '#D9534F'});
+                $('h1,h3,p').css({'background-color' : '#5CB85C', 'color' : '#000'});
+            });
+            $("#Danger").click(function(){
+                $('.wrapper').css({'background-color' : '#337AB7'});
+                $('h1,h3,p').css({'background-color' : '#D9534F', 'color' : '#ddd'});
+            });
+            /* Datepicker start */
+            $( function() {
+                $( "#datepicker" ).datepicker();
+            });
+            /* Datepicker end */
+            
+            /*** WORD COUNTER ***/
+            counter = function() {
+                var value = $('#text').val();
+
+                if (value.length == 0) {
+                    $('#wordCount').html(0);
+                    $('#totalChars').html(0);
+                    $('#charCount').html(0);
+                    $('#charCountNoSpace').html(0);
+                    return;
+                }
+
+                var regex = /\s+/gi;
+                var wordCount = value.trim().replace(regex, ' ').split(' ').length;
+                var totalChars = value.length;
+                var charCount = value.trim().length;
+                var charCountNoSpace = value.replace(regex, '').length;
+
+                $('#wordCount').html(wordCount);
+                $('#totalChars').html(totalChars);
+                $('#charCount').html(charCount);
+                $('#charCountNoSpace').html(charCountNoSpace);
+            };
+            
+            $('#count').click(counter);
+            $('#text').change(counter);
+            $('#text').keydown(counter);
+            $('#text').keypress(counter);
+            $('#text').keyup(counter);
+            $('#text').blur(counter);
+            $('#text').focus(counter);
+            
+            /*** tabs ***/
+            $( "#tabs" ).tabs();
+        });
+        
+    </script>
+</body>
+</html>

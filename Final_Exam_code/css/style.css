@@ -1,0 +1,93 @@
+/*** form style ***/
+.wrapper{
+    background: #000;
+    margin: 50px auto;
+    padding: 40px;
+}
+h1{
+    font-weight: bold;
+    font-size: 55px;
+    color: #fff;
+}
+form{
+    width: 600px;
+    margin: 50px auto;
+    background: #ddd;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px;
+}
+label{
+    font-size: 18px;
+}
+.form-control{
+    background: #eee;
+    padding: 22px;
+    color: #000;
+}
+.form-group span{
+    color: #FFf;
+    font-weight: bold;
+    font-size: 18px;
+}
+/*** form style ***/
+/*** image-gallery ***/
+.gallery{
+    padding: 100px 0;
+}
+/*** image-gallery ***/
+/*** text-area ***/
+.textarea_word{
+    text-align: center;
+    padding: 50px;
+}
+.textarea_word h3{
+    font-weight: bold;
+}
+/*** Background Color Change ***/
+.wrapper{
+    margin-top: 60px;
+}
+.color-button{
+    margin-top: 0;
+}
+.color-button h2{
+    color: aliceblue;
+}
+.header h1{
+    background: #1C92BE;
+    text-align: center;
+    padding: 25px;
+    font-size: 30px;
+}
+.content-body h3{
+    background: #1C92BE;
+    text-align: center;
+    padding: 25px;
+}
+.content-body p{
+    background: #1C92BE;
+    color:bisque;
+    text-align: center;
+    padding: 25px;
+}
+/*** date picker **/
+.pick-date{
+    color: #fff;
+    background-color:transparent;
+    text-align:center;
+    padding:200px 80px;
+    text-align: justify;
+}
+.pick-date h3{
+    color: #fff;
+    font-weight: bold;
+}
+.pick-date p{
+    font-weight: bold;
+    font-size: 18px;
+}
+/*** tabs ***/
+.tabs_jqui{
+    padding: 50px 0;
+}
